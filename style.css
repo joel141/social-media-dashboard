@@ -1,192 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 :root {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-
-
+    
     /* primary */
     --clr-lime-green: hsl(163, 72%, 41%);
-    --bright-red: hsl(356, 69%, 56%);
-    
-    
-    --clr-facebook: hsl(208, 92%, 53%);
-    --twitter: hsl(203, 89%, 53%);
-    --instagram: linear gradient hsl(37, 97%, 70%), hsl(329, 70%, 58%);
-    --youTube: hsl(348, 97%, 39%);
-    
+  --bright-red: hsl(356, 69%, 56%);
 
-    font-size: 14px;
-    --fs-100: 14px;
-    
-    --toggle: hsl(230, 22%, 74%);
-    
-    /* Neutral */
-    
-    
-    --white-bg: hsl(0, 0%, 100%);
-    --card-bg-100: hsl(225, 100%, 98%);
-    --card-bg-200: hsl(227, 47%, 96%);
-    --d-g-blue-100: hsl(228, 12%, 44%);
-    --v-d-blue-200: hsl(230, 17%, 14%);
+  --clr-facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear gradient hsl(37, 97%, 70%), hsl(329, 70%, 58%);
+  --youTube: hsl(348, 97%, 39%);
 
-    font-family: 'Inter', sans-serif;
-    --ff-primary: 'Inter', sans-serif;
+  font-size: 14px;
+  
+  --toggle: hsl(230, 22%, 74%);
 
-        --fw-100: 400;
-        --fw-200: 700;
+  /* Neutral */
+  
+  --white-bg: hsl(0, 0%, 100%);
+  --card-bg-100: hsl(225, 100%, 98%);
+  --card-bg-200: hsl(227, 47%, 96%);
+  --d-g-blue-100: hsl(228, 12%, 44%);
+  --v-d-blue-200: hsl(230, 17%, 14%);
+
+  font-family: "Inter", sans-serif;
+  --ff-primary: "Inter", sans-serif;
+  
+  --fw-100: 400;
+  --fw-200: 700;
+  
+  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --fs-100: 14px;
 }
 
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 }
 
 body {
-    padding-inline: 150px;
+  padding-inline: 150px;
 }
 
 .header {
-    display: flex;
-    width: 100%;
-    font-size: var(--fs-100);
+  display: flex;
+  width: 100%;
+  font-size: var(--fs-100);
 }
 
 .header h1 {
-    color: var(--v-d-blue-200);
+  color: var(--v-d-blue-200);
 }
-.header h1 strong{
-    display: block;
-    font-size: var(--fs-100);
-    color: var(--d-g-blue-100);
+.header h1 strong {
+  display: block;
+  font-size: var(--fs-100);
+  color: var(--d-g-blue-100);
 }
 
 .total-likes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .total-likes .cards-col {
-    width: 250px;
-    height: min-content;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-top: 7px;
+  width: 250px;
+  height: min-content;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 7px;
 }
 
 .total-likes .fb {
-    background-color: var(--clr-facebook);
+  background-color: var(--clr-facebook);
 }
 
 .total-likes .twit {
-    background-color: var(--twitter);
+  background-color: var(--twitter);
 }
 
 .total-likes .ig {
-    background-color: var(--youTube);
+  background-color: var(--youTube);
 }
 
 .total-likes .ytube {
-    background-color: var(--youTube);
+  background-color: var(--youTube);
 }
-
 
 .total-likes .cards {
-    background-color: var(--card-bg-200);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 0;
+  background-color: var(--card-bg-200);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
 }
 
-.cards span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.cards span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .cards h2 {
-    font-size: 50px;
-    color: var(--v-d-blue-200);
+  font-size: 50px;
+  color: var(--v-d-blue-200);
 }
 
 .cards h3 {
-    font-size: var(--fs-100);
-    letter-spacing: 3px;
-    color: var(--d-g-blue-100);
-    font-weight: lighter;
+  font-size: var(--fs-100);
+  letter-spacing: 3px;
+  color: var(--d-g-blue-100);
+  font-weight: lighter;
 }
 
-
 .overview {
-    display: flex;
-    flex-direction: column;
-    width: min-content;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
 }
 
 .overview h2 {
-    color: var(--d-g-blue-100);
-    margin-top: 30px;
-
+  color: var(--d-g-blue-100);
+  margin-top: 30px;
 }
 
 .social-col {
-    display: flex;
-    width: 1030px;
-    flex-wrap: wrap;
-    gap: 2rem;
-
+  display: flex;
+  width: 1030px;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .social-col div {
-    width: 190px;
-    height: min-content;
-    background-color: var(--card-bg-200);
-    flex-grow: 1;
-    padding: 20px;
-    border-radius: 10px;
-    line-height: 0;
+  width: 190px;
+  height: min-content;
+  background-color: var(--card-bg-200);
+  flex-grow: 1;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 0;
 }
 
 .social-col div section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .red-radials {
-    color: var(--bright-red);
+  color: var(--bright-red);
 }
 
 .green-radials {
-    color: var(--clr-lime-green);
+  color: var(--clr-lime-green);
 }
 
 .green-radials,
 .red-radials {
-    font-size: 14px;
-    font-weight: var(--fw-200);
+  font-size: 14px;
+  font-weight: var(--fw-200);
 }
 
 .social-col .o-views p {
-    font-size: var(--fs-100);
-    font-weight: var(--fw-200);
-    color: var(--d-g-blue-100);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-200);
+  color: var(--d-g-blue-100);
 }
 .social-col .views {
-    font-size: 30px;
-    color: var(--v-d-blue-200);
-    font-weight: var(--fw-200);
+  font-size: 30px;
+  color: var(--v-d-blue-200);
+  font-weight: var(--fw-200);
 }
-
-
-
-
